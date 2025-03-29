@@ -43,9 +43,3 @@ JaCoCo coverage reports can be found in `target/site/jacoco/index.html` after ru
 - `WordStatistics` - Tracks word statistics
 - `TextCleaner` - Cleans HTML tags
 - `PerformanceMonitor` - Monitors performance
-
-## Author
-[Your Name]
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details
