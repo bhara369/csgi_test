@@ -77,16 +77,6 @@ class TextCleanerTest {
     assertThat(result).isEqualTo("Hello World");
   }
 
-  /*@ParameterizedTest(name = "Should handle {0}")
-  @DisplayName("Should handle various HTML tag formats")
-  @MethodSource("provideHtmlTagFormats")
-  void shouldHandleVariousHtmlTagFormats(String input, String expected) {
-    // Act
-    String result = TextCleaner.removeHtmlTags(input);
-
-    // Assert
-    assertThat(result).isEqualTo(expected);
-  }*/
 
   @ParameterizedTest(name = "Should handle whitespace: {0}")
   @DisplayName("Should preserve whitespace")
@@ -119,16 +109,6 @@ class TextCleanerTest {
     assertThat(result).isEqualTo(input);
   }
 
-  /*@ParameterizedTest(name = "Should handle special HTML content: {0}")
-  @DisplayName("Should handle special HTML content")
-  @MethodSource("provideSpecialHtmlContent")
-  void shouldHandleSpecialHtmlContent(String input, String expected) {
-    // Act
-    String result = TextCleaner.removeHtmlTags(input);
-
-    // Assert
-    assertThat(result).isEqualTo(expected);
-  }*/
 
   @Test
   @DisplayName("Should handle malformed HTML")

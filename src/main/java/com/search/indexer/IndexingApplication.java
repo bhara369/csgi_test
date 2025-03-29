@@ -30,8 +30,6 @@ public class IndexingApplication {
   // Example usage showing performance monitoring
   public static void main(String[] args) throws Exception {
     if (args.length == 0) {
-      //todo : change all loggers to debug rather than info
-      // check how to display only info logs when the jar is executed
       throw new Exception("Please provide at least one file path as argument");
     }
 

@@ -179,21 +179,4 @@ class IndexerConfigTest {
         "Should throw RuntimeException when properties file is missing");
   }
 
-//  @Test
-//  @DisplayName("Should throw exception when properties file cannot be loaded")
-//  void shouldThrowExceptionWhenPropertiesFileCannotBeLoaded() throws IOException {
-//    // Arrange
-//    File brokenFile = tempDir.resolve("application.properties").toFile();
-//    try (FileWriter writer = new FileWriter(brokenFile)) {
-//      writer.write("invalid content without equals sign"); // Corrupt the file
-//    }
-//
-//    // Act & Assert
-//    Exception exception = assertThrows(RuntimeException.class, IndexerConfig::getBufferSize,
-//        "Should throw RuntimeException when properties file is corrupted");
-//
-//    assertTrue(exception.getMessage().contains("Error loading properties"),
-//        "Exception message should indicate failure to load properties");
-//  }
-
 }

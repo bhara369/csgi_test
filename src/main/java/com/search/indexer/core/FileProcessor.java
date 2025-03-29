@@ -127,9 +127,6 @@ public class FileProcessor {
         }
 
         for (RuleAccumulator accumulator : accumulators) {
-          //todo ; print filename along with rule and result
-          // FileName: abc.txt , Rule: [Uppercase Words Count] : Result : 10
-          // FileName: abc.html , Rule: [Words Longer Than 5 Chars] : Result : abc,bca,anjdsn,jsfufh
           logger.info("\nFile Name: {}\n {}\n", filePath.getFileName(),
               accumulator.getResult());
         }
